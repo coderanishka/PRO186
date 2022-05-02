@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>A-Frame SPE Particle System Component Example</title>
+
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    
+    <script src="https://unpkg.com/aframe-spe-particles-component@^1.0.4/dist/aframe-spe-particles-component.min.js"></script>
+   
+</head>
+
+<body>
+    <a-scene id="scene">
+        <a-entity id = 'firework1' position="0 1 0 " spe-particles="        
+        color: yellow, purple, cyan, pink; 
+        distribution: sphere; 
+        randomize-velocity: true;
+        radius: 1; 
+        particle-count: 800; 
+        velocity: 1; 
+        velocity-spread: 17; 
+        drag: 1; 
+        max-age: 15;
+        duration: -1,
+        blending: additive;
+        active-multiplier: 10; 
+        size: 1, 1, 1, 0">
+        </a-entity>
+        <a-entity id = 'firework2' position="-10 1 10 " spe-particles="        
+        color: green, purple, brown, pink; 
+        distribution: sphere; 
+        randomize-velocity: true;
+        radius: 1; 
+        particle-count: 800; 
+        velocity: 1; 
+        velocity-spread: 12; 
+        drag: 1; 
+        max-age: 11.5;
+        duration: -1,
+        blending: additive;
+        active-multiplier: 10; 
+        size: 1, 1, 1, 0">
+        </a-entity>
+        <a-entity id = 'firework3' position="20 11 5 " spe-particles="        
+        color: pink, purple, orange, green; 
+        distribution: sphere; 
+        randomize-velocity: true;
+        radius: 3; 
+        particle-count: 1200; 
+        velocity: 1; 
+        velocity-spread: 15; 
+        drag: 1; 
+        max-age: 22;
+        duration: -1,
+        blending: additive;
+        active-multiplier: 10; 
+        size: 1, 1, 1, 0">
+        </a-entity>
+
+
+        <a-sky color="#000000"></a-sky>
+        <a-camera position="0 0 30"></a-camera>
+    </a-scene>
+</body>
+
+</html>
